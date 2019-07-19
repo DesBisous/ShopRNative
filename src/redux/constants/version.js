@@ -1,0 +1,2 @@
+export const UPDATE_VERSION = 'UPDATE_VERSION';
+export const GET_VERSION = 'GET_VERSION';
