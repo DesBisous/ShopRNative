@@ -37,6 +37,14 @@
 		2D16E6881FA4F8E400B85C8A /* libReact.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D16E6891FA4F8E400B85C8A /* libReact.a */; };
 		2DCD954D1E0B4F2C00145EB5 /* ShopRNativeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* ShopRNativeTests.m */; };
 		2DF0FFEE2056DD460020B375 /* libReact.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DAD3EA31DF850E9000B6D8A /* libReact.a */; };
+		469433DB22E4873300E90A3F /* GetSimInfoRecognition.m in Sources */ = {isa = PBXBuildFile; fileRef = 469433D422E4873200E90A3F /* GetSimInfoRecognition.m */; };
+		469433DC22E4873300E90A3F /* GetPermissionsRecognition.m in Sources */ = {isa = PBXBuildFile; fileRef = 469433D522E4873200E90A3F /* GetPermissionsRecognition.m */; };
+		469433DD22E4873300E90A3F /* GetLocationRecognition.m in Sources */ = {isa = PBXBuildFile; fileRef = 469433D622E4873200E90A3F /* GetLocationRecognition.m */; };
+		469433DE22E4873300E90A3F /* GetSectionContactsRecognition.m in Sources */ = {isa = PBXBuildFile; fileRef = 469433D822E4873200E90A3F /* GetSectionContactsRecognition.m */; };
+		469433E822E48ABF00E90A3F /* LJPeoplePickerDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 469433E222E48ABF00E90A3F /* LJPeoplePickerDelegate.m */; };
+		469433E922E48ABF00E90A3F /* LJPickerDetailDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 469433E422E48ABF00E90A3F /* LJPickerDetailDelegate.m */; };
+		469433EA22E48ABF00E90A3F /* LJContactManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 469433E522E48ABF00E90A3F /* LJContactManager.m */; };
+		469433EB22E48ABF00E90A3F /* LJPerson.m in Sources */ = {isa = PBXBuildFile; fileRef = 469433E722E48ABF00E90A3F /* LJPerson.m */; };
 		4D41455EAE844BFE916F528F /* libRNDeviceInfo-tvOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 223C2DE062CC4ACE88942237 /* libRNDeviceInfo-tvOS.a */; };
 		61708023B52F4A37A3F78B50 /* libRNNetworkInfo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D8D7F54E2EA14BC5A3859100 /* libRNNetworkInfo.a */; };
 		7F0C1875A0AE46A8BDAEB1C5 /* libRNDeviceInfo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D2A7C9AAE0D47BE9CBF53CA /* libRNDeviceInfo.a */; };
@@ -383,6 +391,22 @@
 		2D02E4901E0B4A5D006451C7 /* ShopRNative-tvOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ShopRNative-tvOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D16E6891FA4F8E400B85C8A /* libReact.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libReact.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		3B954003144D47BC8893F84A /* RNNetworkInfo.xcodeproj */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = "wrapper.pb-project"; name = RNNetworkInfo.xcodeproj; path = "../node_modules/react-native-network-info/ios/RNNetworkInfo.xcodeproj"; sourceTree = "<group>"; };
+		469433D322E4873200E90A3F /* GetLocationRecognition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GetLocationRecognition.h; path = ShopRNative/Device/GetLocationRecognition.h; sourceTree = "<group>"; };
+		469433D422E4873200E90A3F /* GetSimInfoRecognition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GetSimInfoRecognition.m; path = ShopRNative/Device/GetSimInfoRecognition.m; sourceTree = "<group>"; };
+		469433D522E4873200E90A3F /* GetPermissionsRecognition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GetPermissionsRecognition.m; path = ShopRNative/Device/GetPermissionsRecognition.m; sourceTree = "<group>"; };
+		469433D622E4873200E90A3F /* GetLocationRecognition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GetLocationRecognition.m; path = ShopRNative/Device/GetLocationRecognition.m; sourceTree = "<group>"; };
+		469433D722E4873200E90A3F /* GetSimInfoRecognition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GetSimInfoRecognition.h; path = ShopRNative/Device/GetSimInfoRecognition.h; sourceTree = "<group>"; };
+		469433D822E4873200E90A3F /* GetSectionContactsRecognition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GetSectionContactsRecognition.m; path = ShopRNative/Device/GetSectionContactsRecognition.m; sourceTree = "<group>"; };
+		469433D922E4873300E90A3F /* GetPermissionsRecognition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GetPermissionsRecognition.h; path = ShopRNative/Device/GetPermissionsRecognition.h; sourceTree = "<group>"; };
+		469433DA22E4873300E90A3F /* GetSectionContactsRecognition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GetSectionContactsRecognition.h; path = ShopRNative/Device/GetSectionContactsRecognition.h; sourceTree = "<group>"; };
+		469433E022E48ABF00E90A3F /* LJContactManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LJContactManager.h; sourceTree = "<group>"; };
+		469433E122E48ABF00E90A3F /* LJPickerDetailDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LJPickerDetailDelegate.h; sourceTree = "<group>"; };
+		469433E222E48ABF00E90A3F /* LJPeoplePickerDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LJPeoplePickerDelegate.m; sourceTree = "<group>"; };
+		469433E322E48ABF00E90A3F /* LJPerson.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LJPerson.h; sourceTree = "<group>"; };
+		469433E422E48ABF00E90A3F /* LJPickerDetailDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LJPickerDetailDelegate.m; sourceTree = "<group>"; };
+		469433E522E48ABF00E90A3F /* LJContactManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LJContactManager.m; sourceTree = "<group>"; };
+		469433E622E48ABF00E90A3F /* LJPeoplePickerDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LJPeoplePickerDelegate.h; sourceTree = "<group>"; };
+		469433E722E48ABF00E90A3F /* LJPerson.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LJPerson.m; sourceTree = "<group>"; };
 		46CE802D22E0C50A009D1AE0 /* ShopRNative.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; name = ShopRNative.entitlements; path = ShopRNative/ShopRNative.entitlements; sourceTree = "<group>"; };
 		5E91572D1DD0AC6500FF2AA8 /* RCTAnimation.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTAnimation.xcodeproj; path = "../node_modules/react-native/Libraries/NativeAnimation/RCTAnimation.xcodeproj"; sourceTree = "<group>"; };
 		67D7D31F12BA4E0D98018A9D /* RNCAsyncStorage.xcodeproj */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = "wrapper.pb-project"; name = RNCAsyncStorage.xcodeproj; path = "../node_modules/@react-native-community/async-storage/ios/RNCAsyncStorage.xcodeproj"; sourceTree = "<group>"; };
@@ -549,6 +573,14 @@
 				13B07FB61A68108700A75B9A /* Info.plist */,
 				13B07FB11A68108700A75B9A /* LaunchScreen.xib */,
 				13B07FB71A68108700A75B9A /* main.m */,
+				469433D322E4873200E90A3F /* GetLocationRecognition.h */,
+				469433D622E4873200E90A3F /* GetLocationRecognition.m */,
+				469433D922E4873300E90A3F /* GetPermissionsRecognition.h */,
+				469433D522E4873200E90A3F /* GetPermissionsRecognition.m */,
+				469433DA22E4873300E90A3F /* GetSectionContactsRecognition.h */,
+				469433D822E4873200E90A3F /* GetSectionContactsRecognition.m */,
+				469433D722E4873200E90A3F /* GetSimInfoRecognition.h */,
+				469433D422E4873200E90A3F /* GetSimInfoRecognition.m */,
 			);
 			name = ShopRNative;
 			sourceTree = "<group>";
@@ -606,6 +638,21 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		469433DF22E48ABF00E90A3F /* LJ */ = {
+			isa = PBXGroup;
+			children = (
+				469433E022E48ABF00E90A3F /* LJContactManager.h */,
+				469433E122E48ABF00E90A3F /* LJPickerDetailDelegate.h */,
+				469433E222E48ABF00E90A3F /* LJPeoplePickerDelegate.m */,
+				469433E322E48ABF00E90A3F /* LJPerson.h */,
+				469433E422E48ABF00E90A3F /* LJPickerDetailDelegate.m */,
+				469433E522E48ABF00E90A3F /* LJContactManager.m */,
+				469433E622E48ABF00E90A3F /* LJPeoplePickerDelegate.h */,
+				469433E722E48ABF00E90A3F /* LJPerson.m */,
+			);
+			path = LJ;
+			sourceTree = "<group>";
+		};
 		46CE801D22E0C4AE009D1AE0 /* Products */ = {
 			isa = PBXGroup;
 			children = (
@@ -645,6 +692,7 @@
 		832341AE1AAA6A7D00B99B32 /* Libraries */ = {
 			isa = PBXGroup;
 			children = (
+				469433DF22E48ABF00E90A3F /* LJ */,
 				5E91572D1DD0AC6500FF2AA8 /* RCTAnimation.xcodeproj */,
 				146833FF1AC3E56700842450 /* React.xcodeproj */,
 				00C302A71ABCB8CE00DB3ED1 /* RCTActionSheet.xcodeproj */,
@@ -794,6 +842,7 @@
 				TargetAttributes = {
 					00E356ED1AD99517003FC87E = {
 						CreatedOnToolsVersion = 6.2;
+						DevelopmentTeam = UZDY9L48K6;
 						TestTargetID = 13B07F861A680F5B00A75B9A;
 					};
 					13B07F861A680F5B00A75B9A = {
@@ -1274,8 +1323,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				469433DB22E4873300E90A3F /* GetSimInfoRecognition.m in Sources */,
+				469433DD22E4873300E90A3F /* GetLocationRecognition.m in Sources */,
 				13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */,
+				469433DE22E4873300E90A3F /* GetSectionContactsRecognition.m in Sources */,
+				469433EA22E48ABF00E90A3F /* LJContactManager.m in Sources */,
 				13B07FC11A68108700A75B9A /* main.m in Sources */,
+				469433E922E48ABF00E90A3F /* LJPickerDetailDelegate.m in Sources */,
+				469433E822E48ABF00E90A3F /* LJPeoplePickerDelegate.m in Sources */,
+				469433EB22E48ABF00E90A3F /* LJPerson.m in Sources */,
+				469433DC22E4873300E90A3F /* GetPermissionsRecognition.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1328,6 +1385,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = UZDY9L48K6;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
@@ -1364,6 +1422,7 @@
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				COPY_PHASE_STRIP = NO;
+				DEVELOPMENT_TEAM = UZDY9L48K6;
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)/../node_modules/@react-native-community/async-storage/ios",
@@ -1406,6 +1465,7 @@
 					"$(SRCROOT)/../node_modules/react-native-network-info/ios",
 				);
 				INFOPLIST_FILE = ShopRNative/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = (
 					"$(inherited)",
@@ -1432,6 +1492,7 @@
 					"$(SRCROOT)/../node_modules/react-native-network-info/ios",
 				);
 				INFOPLIST_FILE = ShopRNative/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = (
 					"$(inherited)",

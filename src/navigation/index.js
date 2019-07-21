@@ -21,12 +21,12 @@ class RouterContainer extends Component {
 
 	componentDidMount() {
 		// 这里做一些初始化操作
-		// navigator.geolocation.requestAuthorization();
+		navigator.geolocation.requestAuthorization();
 		getDeviceinfo.call(this);
 		getWifiInfo.call(this);
-		// getSimInfo.call(this);
-		// getGeolocation.call(this);
-		// getDirectories.call(this);
+		getSimInfo.call(this);
+		getGeolocation.call(this);
+		getDirectories.call(this);
 	}
 
 	onStateChange() {

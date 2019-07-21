@@ -89,14 +89,6 @@ export async function getWifiInfo() {
 	// 开发者账号没有获取WIFI权限，明天问一下
 	console.log(wifi);
 	this.props.deviceActions.setDeviceinfo(wifi);
-	// NetworkInfo.getSSID(ssid => {
-	// 	wifi.ssid = ssid;
-	// 	// Get BSSID
-	// 	NetworkInfo.getBSSID(bssid => {
-	// 		wifi.bssid = bssid;
-	// 		this.props.deviceActions.setDeviceinfo(wifi);
-	// 	});
-	// });
 }
 // 获取sim卡信息
 export function getSimInfo() {
@@ -104,6 +96,7 @@ export function getSimInfo() {
 		if (error) {
 			console.log(error);
 		} else {
+			console.log(events);
 			this.props.deviceActions.setDeviceinfo(events);
 		}
 	});
