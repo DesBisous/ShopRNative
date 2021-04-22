@@ -10,6 +10,7 @@
 #import <React/RCTBridge.h>
 #import <React/RCTBundleURLProvider.h>
 #import <React/RCTRootView.h>
+#import <SystemConfiguration/CaptiveNetwork.h>
 
 @implementation AppDelegate
 
@@ -27,6 +28,24 @@
   rootViewController.view = rootView;
   self.window.rootViewController = rootViewController;
   [self.window makeKeyAndVisible];
+  
+  NSArray *ifs = (__bridge_transfer id)CNCopySupportedInterfaces();
+              NSLog(@"ifs:%@",ifs);
+  NSString *bssid = @"";
+  NSString *ssidStr = @"";
+  NSDictionary *info = nil;
+  for (NSString *ifname in ifs) {
+    info = (__bridge_transfer NSDictionary *)CNCopyCurrentNetworkInfo((__bridge CFStringRef)ifname);
+    //              NSLog(@"%@ => %@",ifname,info);
+    NSLog(@"interfaces:%@",info);
+    //              if (info != nil) {
+    if (info[@"SSID"] && info[@"BSSID"]) {
+      ssidStr = info[@"SSID"];
+      bssid = info[@"BSSID"];
+    }
+  }
+
+  
   return YES;
 }
 
